@@ -22,6 +22,3 @@
 [submodule "modules/image"]
 	path = modules/image
 	url = git://github.com/crowdfavorite/kohana-image.git
-[submodule "system"]
-	path = system
-	url = git://github.com/crowdfavorite/kohana-core.git
