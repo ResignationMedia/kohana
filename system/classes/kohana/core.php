@@ -889,7 +889,7 @@ class Kohana_Core {
 				{
 					try
 					{
-						// Cache has expired (fix by Jameson)
+						// Cache has expired (fix by Jameson on 1.30.2015)
 						if (file_exists($dir.$file)) unlink($dir.$file);
 					}
 					catch (Exception $e)
