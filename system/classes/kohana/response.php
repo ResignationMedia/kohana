@@ -657,7 +657,7 @@ class Kohana_Response implements HTTP_Response, Serializable {
 			try
 			{
 				// Attempt to remove the file
-				unlink($filename);
+				if(file_exists($filename)) unlink($filename);
 			}
 			catch (Exception $e)
 			{

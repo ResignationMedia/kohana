@@ -108,7 +108,7 @@ Abstract Class Archive
 					array(':filename' => $filename));
 
 			// Remove the file
-			unlink($filename);
+			if(file_exists($filename)) unlink($filename);
 		}
 
 		return $this->create($this->paths, $filename);
