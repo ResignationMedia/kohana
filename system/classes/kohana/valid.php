@@ -380,6 +380,8 @@ class Kohana_Valid {
 	 */
 	public static function alpha_numeric($str, $utf8 = FALSE)
 	{
+        return (bool) preg_match('/^[a-zA-Z0-9_-]+$/uD', $str);
+
 		if ($utf8 === TRUE)
 		{
 			return (bool) preg_match('/^[\pL\pN]++$/uD', $str);
